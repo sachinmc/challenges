@@ -1,5 +1,4 @@
 require 'date'
-require 'pry'
 
 class Meetup
   def initialize(month, year)
