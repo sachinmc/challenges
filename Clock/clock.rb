@@ -43,12 +43,12 @@ class Clock
 
   def backward_an_hour
     @hr == 0 ? @hr = 23 : @hr -= 1
-    @min += 60 #substracting hrs by adding to -ve number 
+    @min += 60 # substracting hrs by adding to -ve number
     backward_an_hour if @min < 0
   end
 
   def ==(other)
-    self.hr == other.hr && self.min == other.min
+    hr == other.hr && min == other.min
   end
 
   def to_s
